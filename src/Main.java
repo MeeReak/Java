@@ -1,14 +1,14 @@
-import composite.Dog;
-import composite.Dogs;
+import Inheritance.Kaneki;
+import Inheritance.Narotu;
+import polymorphism.Retangle;
+import polymorphism.Triangle;
 
 public class Main {
     public static void main(String[] args) {
-        Dog leo = new Dog("Leo", 10);
-        Dog john = new Dog("John", 20);
+        Triangle triangle = new Triangle("Triangle", 10, 5);
+        System.out.println(triangle.getArea());
 
-        Dogs dogs = new Dogs("Husky");
-        dogs.addDog(john);
-        dogs.addDog(leo);
-        System.out.println(dogs.getWeight());
+        Retangle retangle = new Retangle("Retangle", 10, 5);
+        System.out.println(retangle.getArea());
     }
 }
