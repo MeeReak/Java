@@ -1,13 +1,14 @@
 import Inheritance.Kaneki;
 import Inheritance.Narotu;
+import polymorphism.Retangle;
+import polymorphism.Triangle;
 
 public class Main {
     public static void main(String[] args) {
-        Kaneki kaneki = new Kaneki("Kaneki Ken", 20, "Half Ghoul");
-        Narotu narotu = new Narotu("Narotu Uzumaki", 20, "The Seventh Hokage");
+        Triangle triangle = new Triangle("Triangle", 10, 5);
+        System.out.println(triangle.getArea());
 
-        System.out.println(kaneki.getPerson());
-        System.out.println();
-        System.out.println(narotu.getPerson());
+        Retangle retangle = new Retangle("Retangle", 10, 5);
+        System.out.println(retangle.getArea());
     }
 }
